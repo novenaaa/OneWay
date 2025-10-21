@@ -155,7 +155,7 @@ function sendWelcomePrompt() {
  */
 async function sendWelcomePanel(chats, expand = false) {
     try {
-        const chatElement = document.getElementById('chat');
+        const chatElement = document.getElementById('chatX');
         const sendTextArea = document.getElementById('send_textarea');
         if (!chatElement) {
             console.error('Chat element not found');

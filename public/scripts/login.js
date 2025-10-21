@@ -50,21 +50,8 @@ async function getUserList() {
  * @returns {Promise<void>}
  */
 async function sendRecoveryPart1(handle) {
-    const response = await fetch('/api/users/recover-step1', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'X-CSRF-Token': csrfToken,
-        },
-        body: JSON.stringify({ handle }),
-    });
 
-    if (!response.ok) {
-        const errorData = await response.json();
-        return displayError(errorData.error || 'An error occurred');
-    }
-
-    showRecoveryBlock();
+    displayError('Contact @Fates Witness to get your key');
 }
 
 /**
