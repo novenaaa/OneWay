@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>SillyTavern</title>
+    <title>One Way</title>
     <base href="/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content">
@@ -251,6 +251,7 @@
                                 </div>
                             </div>
                         </div>
+                    
                         <div id="common-gen-settings-block" class="width100p">
                             <div id="pro-settings-block" class="flex-container gap10h5v justifyCenter">
                                 <div id="amount_gen_block" class="range-block-range-and-counter alignitemscenter flex-container marginBot5 flexFlowColumn flexBasis48p flexGrow flexShrink gap0">
@@ -321,6 +322,7 @@
                             </div>
                             <hr>
                         </div>
+                        
                         <div id="respective-ranges-and-temps" class="width100p">
                             <!--
                             <div name="OldKoboldTempAndRepPenBlock" class="flex-container gap10h5v justifyCenter" id="range_block">
@@ -706,6 +708,7 @@
                                         </div>
                                     </div>
                                 </div>
+                <div class="ddisplay" style="display: none;"      >
                                 <div class="range-block" data-source="openai,aimlapi,openrouter,custom,cohere,perplexity,groq,mistralai,electronhub,nanogpt,deepseek,xai,pollinations,moonshot,fireworks,cometapi,azure_openai">
                                     <div class="range-block-title" data-i18n="Frequency Penalty">
                                         Frequency Penalty
@@ -982,6 +985,7 @@
                                         </div>
                                     </div>
                                 </div>
+                </div       >
                                 <div class="range-block" data-source="openai,openrouter,mistralai,custom,cohere,groq,electronhub,nanogpt,xai,pollinations,aimlapi,makersuite,vertexai,azure_openai">
                                     <div class="range-block-title justifyLeft" data-i18n="Seed">
                                         Seed
@@ -995,6 +999,7 @@
                                 </div>
                             </div>
                         </div>
+                <div class="ddisplay" style="display: none;">
                         <div id="advanced-ai-config-block" class="width100p">
                             <div id="kobold_api-settings">
                                 <div class="flex-container gap10h5v justifyCenter">
@@ -2170,10 +2175,12 @@
                                 </div>
                             </div><!-- end of OpenAI settings-->
                         </div>
+                </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="ddisplay" style="display: none;">
         <div id="sys-settings-button" class="drawer">
             <div class="drawer-toggle drawer-header">
                 <div id="API-status-top" class="drawer-icon fa-solid fa-plug-circle-exclamation fa-fw closedIcon" title="API Connections" data-i18n="[title]API Connections;[no_connection_text]api_no_connection" no_connection_text="No connection..."></div>
@@ -3764,6 +3771,8 @@
                 </div>
             </div>
         </div>
+        </div>
+        <div class="ddisplay" style="display: none;">
         <div id="advanced-formatting-button" class="drawer">
             <div class="drawer-toggle">
                 <div class="drawer-icon fa-solid fa-font fa-fw closedIcon" title="AI Response Formatting" data-i18n="[title]AI Response Formatting"></div>
@@ -4336,6 +4345,7 @@
                 </div>
             </div>
         </div>
+        </div>
         <div id="WI-SP-button" class="drawer">
             <div class="drawer-toggle drawer-header">
                 <div id="WIDrawerIcon" class="drawer-icon fa-solid fa-book-atlas fa-fw closedIcon " title="World Info" data-i18n="[title]World Info"></div>
@@ -4568,7 +4578,7 @@
                                 <option value="en">English</option>
                             </select>
                         </div>
-                        <small id="version_display"></small>
+                    <small id="version_display_">One Way 1.0b ST 1.14 (74c158bd2)</small>
                     </div>
                     <div name="UserSettingsRowTwo" class="flex-container flexFlowRow">
                         <div id="account_controls" class="flex-container">
@@ -5100,10 +5110,12 @@
                                     <input id="disable_group_trimming" type="checkbox" />
                                     <small data-i18n="Relax message trim in Groups">Relax message trim in Groups</small>
                                 </label>
+                        <div class="ddisplay" style="display: none;">
                                 <label class="checkbox_label" for="console_log_prompts">
                                     <input id="console_log_prompts" type="checkbox" />
                                     <small data-i18n="Log prompts to console">Log prompts to console</small>
                                 </label>
+                        </div>
                                 <label class="checkbox_label" for="request_token_probabilities" title="Requests logprobs from the API for the Token Probabilities feature." data-i18n="[title]Requests logprobs from the API for the Token Probabilities feature">
                                     <input id="request_token_probabilities" type="checkbox" />
                                     <small data-i18n="Request token probabilities">Request token probabilities</small>
@@ -5116,6 +5128,7 @@
                                     <input id="pin_styles" type="checkbox" />
                                     <small data-i18n="Pin greeting message styles">Pin greeting message styles</small>
                                 </label>
+<div class="ddisplay" style="display: none;">
                                 <div class="inline-drawer wide100p flexFlowColumn">
                                     <div class="inline-drawer-toggle inline-drawer-header userSettingsInnerExpandable" title="Automatically reject and re-generate AI message based on configurable criteria." data-i18n="[title]Automatically reject and re-generate AI message based on configurable criteria">
                                         <b><span data-i18n="Auto-swipe">Auto-swipe</span></b>
@@ -5166,7 +5179,9 @@
 
 
                                 </div>
+        </div>
                             </div>
+        <div class="ddisplay" style="display: none;">
                             <div name="AutoCompleteToggle" class="inline-drawer wide100p flexFlowColumn">
                                 <div class="inline-drawer-toggle inline-drawer-header userSettingsInnerExpandable" title="Options for the various autocomplete input boxes.">
                                     <b><span data-i18n="AutoComplete Settings">AutoComplete Settings</span></b>
@@ -5252,6 +5267,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <div name="STscriptToggles">
                                 <h4 data-i18n="STscript Settings">STscript Settings</h4>
                                 <div title="Sets default flags for the STscript parser." data-i18n="[title]Sets default flags for the STscript parser.">
@@ -5275,7 +5291,9 @@
                                         </a>
                                     </label>
                                 </div>
+        </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -5401,7 +5419,9 @@
                         <div id="accuweather_container" class="extension_container"></div>
                         <div id="dice_container" class="extension_container"></div>
                     </div>
+
                     <hr class="wide100p margin0">
+                    <div class="ddisplay" style="display: none;">
                     <div class="alignitemscenter flex-container justifyCenter wide100p" style="justify-content: space-between;">
                         <h4 class="margin0">
                             <span data-i18n="(DEPRECATED)">(DEPRECATED)</span>
@@ -5422,6 +5442,7 @@
                             <div id="extensions_connect" class="menu_button" data-i18n="Connect">Connect</div>
                         </div>
                     </div>
+</div>
                 </div>
             </div>
         </div>
@@ -7053,25 +7074,28 @@
 
         <div id="onboarding_template" class="template_element">
             <div class="onboarding">
-                <h3 data-i18n="Welcome to SillyTavern!">Welcome to SillyTavern!</h3>
+                <h3 data-i18n="Welcome to OneWay!">Welcome to OneWay!</h3>
                 <div id="onboarding-UI-language-block" class="flex-container alignItemsBaseline">
                     <span data-i18n="UI Language">Language:</span>
                     <select id="onboarding_ui_language_select" class="flex1 margin0">
                         <option value="en">English</option>
                     </select>
                 </div>
-                <b data-i18n="SillyTavern is aimed at advanced users.">
-                    SillyTavern is aimed at advanced users.
+                <!--
+                <b data-i18n="OneWay is aimed at casual users.">
+                    OneWay is aimed at casual users.
                 </b>
+            
                 <ul class="justifyLeft marginTopBot5">
                     <li><span data-i18n="welcome_message_part_1">Read the</span> <a href="https://docs.sillytavern.app/" target="_blank" data-i18n="welcome_message_part_2">Official Documentation</a><span data-i18n="welcome_message_part_3">.</span></li>
                     <li><span data-i18n="welcome_message_part_4">Type</span> <code>/help</code> <span data-i18n="welcome_message_part_5">in chat for commands and macros.</span></li>
                     <li><span data-i18n="welcome_message_part_6">Join the</span> <a href="https://discord.gg/sillytavern" data-i18n="Discord server" target="_blank">Discord server</a> <span data-i18n="welcome_message_part_7">for info and announcements.</span></li>
                 </ul>
+            -->
                 <div class="expander"></div>
                 <div class="textAlignCenter">
                     <h3 data-i18n="Looking for AI characters?">
-                        Looking for AI characters?
+                        Looking for Character Cards?
                     </h3>
                     <span>
                         <span class="menu_button menu_button_icon external_import_button">
@@ -7079,11 +7103,11 @@
                             <span data-i18n="onboarding_import">Import</span>
                         </span>
                         <span data-i18n="from supported sources or view">
-                            from supported sources or view
+                            from supported sources and browse
                         </span>
                         <span class="open_characters_library menu_button menu_button_icon">
                             <i class="fa-solid fa-image-portrait"></i>
-                            <span data-i18n="Sample characters">Sample characters</span>
+                            <span data-i18n="Sample characters">Pre-picked characters</span>
                         </span>
                     </span>
                 </div>
@@ -7737,6 +7761,8 @@
             documentHeight();
         });
     </script>
+
+    <script></script>
 </body>
 
 </html>

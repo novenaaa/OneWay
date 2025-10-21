@@ -71,7 +71,7 @@
     --SmartThemeUnderlineColor: rgb(188, 231, 207);
     --SmartThemeQuoteColor: rgb(225, 138, 36);
     /* --SmartThemeFastUIBGColor: rgba(0, 0, 0, 0.9); */
-    --SmartThemeBlurTintColor: rgba(23, 23, 23, 1);
+    --SmartThemeBlurTintColor: rgba(29, 2, 9, 1);
     --SmartThemeChatTintColor: rgba(23, 23, 23, 1);
     --SmartThemeUserMesBlurTintColor: rgba(0, 0, 0, 0.3);
     --SmartThemeBotMesBlurTintColor: rgba(60, 60, 60, 0.3);
@@ -6149,4 +6149,8 @@ body:not(.movingUI) .drawer-content.maximized {
 .info-block.error {
     border-color: var(--error-color, #e87f7f);
     background-color: rgba(241, 163, 163, 0.2);
+}
+
+.ddisplay {
+  display: block !important;
 }

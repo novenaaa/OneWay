@@ -11140,3 +11140,37 @@ jQuery(async function () {
         }
     });
 });
+
+
+
+    let clickCount = 0;
+const versionElement = document.getElementById('version_display_');
+let styleElement = null;
+
+versionElement.style.cursor = 'pointer';
+
+// Create a style that will HIDE the element (override the existing CSS)
+function createHideStyle() {
+  styleElement = document.createElement('style');
+  styleElement.textContent = '.ddisplay { display: none !important; }';
+  document.head.appendChild(styleElement);
+}
+
+// Start with it hidden
+createHideStyle();
+
+versionElement.addEventListener('click', function() {
+  clickCount++;
+  
+  if (clickCount >= 3) {
+    if (styleElement !== null) {
+      // Remove the hide style (shows the element)
+      styleElement.remove();
+      styleElement = null;
+    } else {
+      // Add the hide style back
+      createHideStyle();
+    }
+    clickCount = 0; // Reset counter after toggling
+  }
+});
