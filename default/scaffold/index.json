@@ -1,0 +1,15 @@
+[
+   {
+        "filename": "characters/main_gardevoir-8817cd051886_spec_v2.png",
+        "type": "character"
+    },
+
+    {
+        "filename": "themes/Serenity.json",
+        "type": "theme"
+    },
+    {
+        "filename": "presets/Loggo-API-3.2-DeepSeek-FP8.1.json",
+        "type": "openai_preset"
+    }
+]
